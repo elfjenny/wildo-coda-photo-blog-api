@@ -1,0 +1,19 @@
+{
+  "name": "wildo-coda-photo-blog-api",
+  "version": "1.0.0",
+  "description": "Api for blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elfjenny/wildo-coda-photo-blog-api.git"
+  },
+  "author": "Evening Wilders Feb 2019",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elfjenny/wildo-coda-photo-blog-api/issues"
+  },
+  "homepage": "https://github.com/elfjenny/wildo-coda-photo-blog-api#readme"
+}
