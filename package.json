@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/elfjenny/wildo-coda-photo-blog-api/issues"
   },
-  "homepage": "https://github.com/elfjenny/wildo-coda-photo-blog-api#readme"
+  "homepage": "https://github.com/elfjenny/wildo-coda-photo-blog-api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
