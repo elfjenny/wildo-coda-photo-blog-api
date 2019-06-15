@@ -4,6 +4,7 @@
   "description": "Api for blog",
   "main": "index.js",
   "scripts": {
+    "launch":"node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
