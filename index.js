@@ -7,7 +7,7 @@ app.get("/api", (req, res)=> {
 });
 
 app.get("/", (req, res) => { 
-    res.send('put a /api before')    
+    res.send('put a /api before every route')    
  });
 
 app.listen(3000, function() {
