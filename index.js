@@ -5,6 +5,11 @@ const port = 3000;
 app.get("/api", (req, res)=> {
     res.send('It works')
 });
+
+app.get("/", (req, res) => { 
+    res.send('put a /api before')    
+ });
+
 app.listen(3000, function() {
     console.log("Server listing on local host port 3000");
 });
