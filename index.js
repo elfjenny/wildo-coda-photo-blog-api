@@ -17,10 +17,15 @@ app.get("/", (req, res) => {
 app.post("/image", (req, res) => { 
     res.send('publish a new image')  
 });
+ app.get("/article", (req, res) => {
+    res.send("List of articles")
+ });
+
+ app.post("/article", (req, res) => {
+     const article = req.body
+     res.status(200).send(`the article ${article} has been succesfully stored.`)
+ });
 
 app.listen(3000, function() {
     console.log("Server listing on local host port 3000");
 });
-
-
- 
