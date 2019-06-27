@@ -16,6 +16,16 @@ app.get("/", (req, res) => {
 
 app.post("/image", (req, res) => { 
     res.send('publish a new image')  
+ app.post("/login", (req, res) => {
+     res.send('need to authenticate')
+ });
+
+ app.post("/comment", (req, res) => {
+    res.send('publish a new comment')
+});
+
+app.listen(3000, function() {
+    console.log("Server listing on local host port 3000");
 });
  app.get("/article", (req, res) => {
     res.send("List of articles")
