@@ -10,8 +10,17 @@ app.get("/", (req, res) => {
     res.send('put a /api before every route')    
  });
 
+ app.get("/articles/:id", (req, res) => { 
+    res.send('get a single article')  
+});
+
+app.post("/image", (req, res) => { 
+    res.send('publish a new image')  
+});
+
 app.listen(3000, function() {
     console.log("Server listing on local host port 3000");
 });
 
 
+ 
