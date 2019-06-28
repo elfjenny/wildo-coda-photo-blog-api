@@ -1,4 +1,5 @@
 const express = require("express");
+const { connect } = require("./db");
 const registerCategoriesRoutes = require("./categories");
 const app = express();
 const port = 3000;
@@ -10,7 +11,6 @@ app.get("/", (req, res) => {
 app.get("/api", (req, res) => {
     res.send("It works");
 });
-
 registerCategoriesRoutes(app);
 
 app.post("/image", (req, res) => {
@@ -20,6 +20,12 @@ app.post("/login", (req, res) => {
     res.send("need to authenticate");
 });
 
-app.listen(3000, function() {
-    console.log("Server listing on local host port 3000");
-});
+connect()
+    .then(() => {
+        app.listen(3000, function() {
+            console.log("Server listing on local host port 3000");
+        });
+    })
+    .catch(err => {
+        console.error(err);
+    });
