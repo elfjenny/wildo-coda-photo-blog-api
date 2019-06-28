@@ -1,4 +1,3 @@
-
 /* ROUTES FOR USER */
 /* GET routes */
 
@@ -6,43 +5,28 @@ module.exports = app => {
     app.get("/api/users/:id", (req, res) => {
         res.send("Route to retrieve a single user");
     });
-};
 
-
-module.exports = app => {
     app.get("/api/users/:id/articles", (req, res) => {
         res.send("Route to retrieve a articles belonging to a single user");
     });
-};
 
-
-
-module.exports = app => {
     app.get("/api/users", (req, res) => {
         res.send("Route to retrieve all user");
     });
-};
 
-/* POST routes */
-
-module.exports = app => {
+    /* POST routes */
     app.post("/api/users", (req, res) => {
         res.send("Route to send a user to be created");
     });
-};
 
-/* PUT routes */
+    /* PUT routes */
 
-module.exports = app => {
     app.put("/api/users", (req, res) => {
-        res.send("Route to update a user);
+        res.send("Route to update a user");
     });
-};
 
-/* DELETE routes */
-module.exports = app => {
+    /* DELETE routes */
     app.delete("/api/users/:id", (req, res) => {
-        res.send("Route to delete a user);
+        res.send("Route to delete a user");
     });
 };
-
