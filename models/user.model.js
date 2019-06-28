@@ -23,4 +23,5 @@ schema.virtual("id", function() {
     return this._id.toString();
 });
 
-module.exports.User = model("User", schema);
+const User = model("User", schema);
+module.exports.User = User;

@@ -1,10 +1,12 @@
 const express = require("express");
+const bp = require("body-parser");
 const { connect } = require("./db");
 const registerCategoriesRoutes = require("./categories");
 const registerArticlesRoutes = require("./articles");
 const registerUsersRoutes = require("./users");
 const registerCommentsRoutes = require("./comments");
 const app = express();
+app.use(bp.json());
 const port = 3000;
 
 app.get("/", (req, res) => {
@@ -28,7 +30,8 @@ app.post("/login", (req, res) => {
 
 connect()
     .then(() => {
-        app.listen(3000, function() {
+        console.log("Successfully connected to database!!!");
+        app.listen(port, function() {
             console.log("Server listing on local host port 3000");
         });
     })
