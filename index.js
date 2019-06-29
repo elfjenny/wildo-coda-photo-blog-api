@@ -12,6 +12,7 @@ app.get("/api", (req, res) => {
 });
 
 registerCategoriesRoutes(app);
+registerArticlesRoutes(app);
 
 app.post("/image", (req, res) => {
     res.send("publish a new image");
