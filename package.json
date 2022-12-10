@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/elfjenny/wildo-coda-photo-blog-api#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   }
 }
